@@ -4,7 +4,7 @@ library(gmodels)
 library(ggvis)
 library(ggplot2)
 
-osmancik <- read_excel("/data/Rice_Osmancik_Cammeo_Dataset.xlsx",sheet=1)
+osmancik <- read_excel("Rice_Osmancik_Cammeo_Dataset.xlsx",sheet=1)
 set.seed(42)
 rows <- sample(nrow(osmancik))
 osmancik <- osmancik[rows, ] #shuffling the dataset since they are ordered (first cammeo then osmancik)
