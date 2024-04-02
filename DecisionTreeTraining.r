@@ -1,6 +1,6 @@
 library(readxl)
 library(tree) # Contains the "tree" function
-osmancik <- as.data.frame(read_excel("/data/Rice_Osmancik_Cammeo_Dataset.xlsx",sheet=1))
+osmancik <- as.data.frame(read_excel("Rice_Osmancik_Cammeo_Dataset.xlsx",sheet=1))
 
 osmancik$CLASS <- factor(osmancik$CLASS, levels = c("Osmancik", "Cammeo"), labels = c("0", "1"))
 
