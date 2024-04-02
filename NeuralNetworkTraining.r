@@ -1,7 +1,7 @@
   library(readxl)
   library(neuralnet)
   #reading the excel file
-  osmancik <- as.data.frame(read_excel("/data/Rice_Osmancik_Cammeo_Dataset.xlsx",sheet=1))
+  osmancik <- as.data.frame(read_excel("Rice_Osmancik_Cammeo_Dataset.xlsx",sheet=1))
  
   #normalize function
   normalize <- function(x) {
